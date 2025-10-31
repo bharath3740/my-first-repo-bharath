@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "62afeed0-62cd-4928-94e9-3e3cc6211341",
+    "name": "Testing FS Collection 1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "{{GMP API Key}}",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "key",
+              "type": "string"
+            },
+            {
+              "key": "in",
+              "value": "query",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://maps.googleapis.com/maps/api/geocode/json",
+          "protocol": "https",
+          "host": [
+            "maps",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "geocode",
+            "json"
+          ]
+        }
+      }
+    }
+  ]
+}
